@@ -15,7 +15,7 @@
 
 ### Installation
 
-🔗 git clone [https://github.com/mustafakaracuha/harry-potter)
+🔗 git clone https://github.com/mustafakaracuha/harry-potter
 <br/>
 <br/>
 ⚡️  npm install <br/>
