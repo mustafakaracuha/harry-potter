@@ -1,5 +1,5 @@
 
-# To do List 
+# Harry Potter Character & Series
 
 ## Technologies and tools
 
