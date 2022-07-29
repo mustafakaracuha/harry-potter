@@ -5,6 +5,8 @@
 
 - ⚙️ React Js 
 - 💾 Redux Tool Kit
+- 🧭 React Router Dom
+- 📀 Axios
 - 🎨 Scss
 
 ### Live
