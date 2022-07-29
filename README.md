@@ -1,5 +1,5 @@
 
-# Harry Potter Character & Series
+# Harry Potter Characters & Series
 
 ## Technologies and tools
 
