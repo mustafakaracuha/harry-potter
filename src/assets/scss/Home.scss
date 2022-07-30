@@ -48,17 +48,18 @@
   }
 
   .persons {
-    width: 100%;
+    width: auto;
     height: auto;
     display: grid;
+    overflow: hidden;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
+    grid-column-gap: 30px;
     grid-row-gap: 50px;
     overflow: auto;
-    padding-left: 30px;
     padding-bottom: 40px;
     padding-top: 50px;
+    padding-left: 25px;
 
     div {
       width: 280px;
@@ -197,7 +198,7 @@
 }
 
 .characterDetail {
-  width: 600px !important;
+  width: 500px !important;
   align-items: center;
   justify-content: center;
   text-align: center;
