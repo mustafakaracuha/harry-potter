@@ -8,7 +8,6 @@ const store = configureStore({
     person,
     book
   },
-  
 });
 
 export default store;

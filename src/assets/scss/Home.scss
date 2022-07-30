@@ -155,7 +155,6 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 10px;
-      
 
       h1 {
         font-family: sans-serif;
@@ -167,11 +166,11 @@
         font-size: 19px;
         @media screen and (max-width: 768px) {
           margin-top: 10px;
-          }
+        }
       }
 
       @media screen and (max-width: 768px) {
-      display: block;
+        display: block;
       }
     }
 
@@ -195,4 +194,33 @@
       }
     }
   }
+}
+
+.characterDetail {
+  width: 600px !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  display: block;
+  img {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  div {
+    padding: 0px;
+    p {
+      font-family: sans-serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.css-yiavyu-MuiBackdrop-root-MuiDialog-backdrop {
+background-color: transparent !important;
+box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+border-radius: 10px !important;
+
 }

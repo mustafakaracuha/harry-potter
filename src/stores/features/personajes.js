@@ -14,7 +14,8 @@ const person = createSlice({
     setHouse: (state, action) => {
       state.personajes = action.payload;
     },
-  },
+  }
+
 });
 
 export const { load, setHouse } = person.actions;
