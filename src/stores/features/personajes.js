@@ -11,8 +11,11 @@ const person = createSlice({
     load: (state, action) => {
       state.personajes = action.payload;
     },
+    setHouse: (state, action) => {
+      state.personajes = action.payload;
+    },
   },
 });
 
-export const { load } = person.actions;
+export const { load, setHouse } = person.actions;
 export default person.reducer;

@@ -10,7 +10,7 @@ export default function Character() {
   const { personajes } = useSelector((state) => state.person);
 
   const handleFetchData = async () => {
-     await getPersonajes()
+    await getPersonajes()
       .then((result) => {
         dispatch(load(result.data));
       })
@@ -18,7 +18,6 @@ export default function Character() {
         console.log(err);
       });
   };
-
 
   useEffect(() => {
     handleFetchData();
