@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { load } from "../stores/personajes";
+import { load } from "../stores/features/personajes";
 import Header from "./Header";
 import "../assets/scss/Home.scss";
 import { getPersonajes } from "../api/api";

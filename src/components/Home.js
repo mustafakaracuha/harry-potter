@@ -3,7 +3,7 @@ import Header from "./Header";
 import "../assets/scss/Home.scss";
 import { getBooks } from "../api/api";
 import { useDispatch, useSelector } from "react-redux";
-import { load } from "../stores/books";
+import { load } from "../stores/features/books";
 
 export default function Home() {
   const dispatch = useDispatch();

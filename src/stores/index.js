@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import person from "./personajes";
-import book from "./books";
+import person from "./features/personajes";
+import book from "./features/books";
 
 
 const store = configureStore({
