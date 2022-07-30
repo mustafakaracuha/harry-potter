@@ -24,4 +24,4 @@
 
 ### Screenshot
 
-<img align="center" width="600" width="600"  src="https://github.com/mustafakaracuha/harry-potter/blob/master/src/assets/images/potter.gif" alt="muskaracuha" />
+<img align="center" width="800" width="800"  src="https://github.com/mustafakaracuha/harry-potter/blob/master/src/assets/images/potter.gif" alt="muskaracuha" />
