@@ -61,7 +61,9 @@ export default function () {
   return (
     <div className="contentTitle">
       <div>
-        <img src={logo} />
+      <NavLink to="/">        
+      <img src={logo} />
+    </NavLink>
       </div>
       <div className="menu">
         <ul>
