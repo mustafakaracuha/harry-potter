@@ -86,7 +86,7 @@ export default function () {
             <>
                 <input
                   ref={inputRef}
-                  placeholder="Search character"
+                  placeholder="Search Character"
                   onChange={getSearch}
                 />
             </>
