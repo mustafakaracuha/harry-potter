@@ -22,7 +22,7 @@
         text-decoration: none;
         color: rgb(61, 61, 61);
         @media screen and (max-width: 480px) {
-          font-size: 15px;
+          font-size: 18px;
         }
       }
       .active {
@@ -38,7 +38,6 @@
       margin-left: 30px;
       outline: none;
       font-size: 20px;
-      animation: slide-in-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       @media screen and (max-width: 480px) {
         font-size: 18px;
         margin-left: 40px;

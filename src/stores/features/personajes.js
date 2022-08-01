@@ -14,9 +14,13 @@ const person = createSlice({
     setHouse: (state, action) => {
       state.personajes = action.payload;
     },
-  }
-
+    searchCharacter: (state, action) => {
+      state.personajes = state.personajes.filter((x) =>
+        x.name.toLowerCase().includes(action.payload.toLowerCase())
+      );
+    },
+  },
 });
 
-export const { load, setHouse } = person.actions;
+export const { load, setHouse, searchCharacter } = person.actions;
 export default person.reducer;

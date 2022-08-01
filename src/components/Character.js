@@ -86,14 +86,19 @@ export default function Character() {
         )}
         <Dialog onClose={handleClose} open={open}>
           <div className="characterDetail">
-          <img width="250" height="300" src={characterDetail.image} alt="" />
+            <img width="250" height="300" src={characterDetail.image} alt="" />
             <div>
-            <p className=""> Name : {characterDetail.name}</p>
-            <p className=""> Date of Birth : {characterDetail.dateOfBirth}</p>
-            <p className=""> Eye Colour : {characterDetail.eyeColour}</p>
-            <p className=""> Hair Colour : {characterDetail.hairColour}</p>
-            <p className=""> Hogwarts Student : {characterDetail.hogwartsStudent=== true ? "Yes" : "No"}</p>
-            <p className=""> Actor : {characterDetail.actor}</p>
+              <p className=""> Name : {characterDetail.name}</p>
+              <p className=""> Date of Birth : {characterDetail.dateOfBirth}</p>
+              <p className=""> Eye Colour : {characterDetail.eyeColour}</p>
+              <p className=""> Hair Colour : {characterDetail.hairColour}</p>
+              <p className="">
+                {" "}
+                Hogwarts Student :{" "}
+                {characterDetail.hogwartsStudent === true ? "Yes" : "No"}
+              </p>
+              <p className=""> House : {characterDetail.house}</p>
+              <p className=""> Actor : {characterDetail.actor}</p>
             </div>
           </div>
         </Dialog>
