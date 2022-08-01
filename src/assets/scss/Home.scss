@@ -45,6 +45,20 @@
         }
       }
     }
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      background: white;
+      text-align: center;
+      position: sticky;
+      top: 0px;
+      z-index: 999;
+
+      img {
+        width: 200px;}
+
+    }
   }
 
   .persons {
@@ -60,6 +74,11 @@
     padding-bottom: 40px;
     padding-top: 50px;
     padding-left: 25px;
+
+    @media screen and (max-width: 480px) {
+      padding-top: 0px;
+      
+    }
 
     div {
       width: 280px;
@@ -91,6 +110,7 @@
         margin-top: 10px;
         box-shadow: none;
       }
+      
 
       h2 {
         font-size: 22px;
@@ -136,7 +156,7 @@
       grid-template-rows: repeat(1, 1fr);
       grid-column-gap: 20px;
       grid-row-gap: 26px;
-      padding-left: 90px;
+      padding-left: 50px;
     }
   }
 
