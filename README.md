@@ -6,6 +6,7 @@
 - ⚙️ React Js 
 - 💾 Redux Tool Kit
 - 🧭 React Router Dom
+- 📢 React Toastify
 - 📀 Axios
 - 🎨 Scss
 
