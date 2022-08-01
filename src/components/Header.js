@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { NavLink, useLocation } from "react-router-dom";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { getHousePersonajes, getPersonajes } from "../api/api";
 import { load, setHouse, searchCharacter } from "../stores/features/personajes";
-
 import logo from "../assets/images/Harry-Potter-Logo.png";
 import "../assets/scss/Home.scss";
 import "../assets/scss/Header.scss";
+
 
 export default function () {
   const location = useLocation();
@@ -21,7 +24,7 @@ export default function () {
           dispatch(setHouse(result.data));
         })
         .catch((err) => {
-          console.log(err);
+                  toast.warn(err.message);
         });
     } else {
       await getPersonajes()
@@ -29,7 +32,7 @@ export default function () {
           dispatch(load(result.data));
         })
         .catch((err) => {
-          console.log(err);
+               toast.warn(err.message);
         });
     }
   };

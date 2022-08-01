@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { load } from "../stores/features/personajes";
-import Header from "./Header";
-import "../assets/scss/Home.scss";
-import { getPersonajes } from "../api/api";
 import Dialog from "@mui/material/Dialog";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import Header from "./Header";
+import { getPersonajes } from "../api/api";
+import { load } from "../stores/features/personajes";
+import "../assets/scss/Home.scss";
+
 
 export default function Character() {
   const [open, setOpen] = useState(false);
@@ -28,7 +32,7 @@ export default function Character() {
         dispatch(load(result.data));
       })
       .catch((err) => {
-        console.log(err);
+        toast.warn(err.message);
       });
   };
 

@@ -1,9 +1,14 @@
 import React, { useEffect } from "react";
-import Header from "./Header";
 import "../assets/scss/Home.scss";
-import { getBooks } from "../api/api";
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import Header from "./Header";
+import { getBooks } from "../api/api";
 import { load } from "../stores/features/books";
+import "../assets/scss/Home.scss";
+
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -15,7 +20,7 @@ export default function Home() {
         dispatch(load(result.data));
       })
       .catch((err) => {
-        console.log(err);
+        toast.warn(err.message);
       });
   };
 
