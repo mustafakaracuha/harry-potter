@@ -14,6 +14,7 @@ export default function Character() {
     eyeColour: "",
     hairColour: "",
     hogwartsStudent: Boolean,
+    house: "",
     actor: "",
     image: "",
   });
@@ -39,6 +40,7 @@ export default function Character() {
       eyeColour: item.eyeColour,
       hairColour: item.hairColour,
       hogwartsStudent: item.hogwartsStudent,
+      house: item.housee,
       actor: item.actor,
       image: item.image,
     };
