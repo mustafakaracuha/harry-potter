@@ -54,7 +54,8 @@ export default function () {
   };
 
   useEffect(() => {
-    if (inputRef === null) inputRef.current.focus();
+    if(location.pathname === "/characters")
+    inputRef.current.focus();
   }, []);
 
   return (
