@@ -65,6 +65,7 @@ export default function Character() {
               <div
                 key={i}
                 title={item.name}
+                onClick={() => handleClickOpen(item)}
                 style={
                   item.house === "Gryffindor"
                     ? { background: "#740001", color: "#EEBA30" }
@@ -77,7 +78,7 @@ export default function Character() {
                     : {}
                 }
               >
-                <div className="imageBox" onClick={() => handleClickOpen(item)}>
+                <div className="imageBox">
                   <img width="250" height="300" src={item.image} alt="" />
                 </div>
                 <h2>{item.name}</h2>
