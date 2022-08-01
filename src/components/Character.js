@@ -40,7 +40,7 @@ export default function Character() {
       eyeColour: item.eyeColour,
       hairColour: item.hairColour,
       hogwartsStudent: item.hogwartsStudent,
-      house: item.housee,
+      house: item.house,
       actor: item.actor,
       image: item.image,
     };
