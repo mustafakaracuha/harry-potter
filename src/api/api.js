@@ -1,11 +1,11 @@
 import axios from "axios";
 
 export const getPersonajes = () => {
-  return axios.get(`http://hp-api.herokuapp.com/api/characters`);
+  return axios.get(`https://hp-api.onrender.com/api/characters`);
 };
 
 export const getHousePersonajes = (house) => {
-  return axios.get(`http://hp-api.herokuapp.com/api/characters/house/${house}`);
+  return axios.get(`https://hp-api.onrender.com/api/characters/house/${house}`);
 };
 
 export const getBooks = () => {
